@@ -9,9 +9,9 @@ def info(url, uid):
 			return data
 		else:
 			print("Only integers are allowed between 1 and 20")
-	except ValueError as e:
+	except ValueError as val:
 		print("No fractions or decimals allowed")
-		raise(e)
+		raise(val)
 	return "Empty information"
 
 def post_data(url, title, content, user=11):
